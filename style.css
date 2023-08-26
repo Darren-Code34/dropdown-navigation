@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: hsl(0, 0%, 98%) ;
+    font-size: 18px;
+    font-family: "Epilogue", sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.nav-group{
+    display: none;
+    min-width: 250px;
+    position: absolute;
+    background: hsl(0, 0%, 98%) ;
+    right: 0;
+    left: auto;
+    top: 0;
+    padding: 20px 25px 0;
+    height: 200vw;
+    color: hsl(0, 0%, 41%) ;
+    box-shadow: -150px 0 100px rgba(0, 0, 0, 0.4);
+}
+
+
+.icon-close-menu{
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 25px;
+}
+
+.menu{
+    margin-bottom: 30px;
+}
+
+
+.menu ul li:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.menu ul li a{
+    color: hsl(0, 0%, 53%);
+    font-weight: 500 ;
+    font-size: 16px;
+}
+
+.arrow-down{
+    margin-left: 15px;
+}
+
+.arrow-up{
+    display: none;
+    margin-left: 15px;
+}
+
+
+.sublist{
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+
+.features-sublist, .company-sublist{
+    display: none;
+}
+
+.features-sublist.active{
+    display: block;
+}
+
+.company-sublist.active{
+    display: block;
+}
+
+.features-sublist li span img{
+    margin-right: 15px;
+}
+
+.link-action a{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 53%);
+    font-weight: 500 ;
+    font-size: 15px;
+}
+
+.register{
+    border: 2px solid hsl(0, 0%, 53%);
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 12px;
+}
+
+.img-hero{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.hero-mobile{
+    width: 100%;
+}
+
+.hero-desktop{
+    display: none;
+}
+
+.text{
+    margin-bottom: 50px;
+}
+
+.title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    color: hsl(0, 0%, 8%);
+    margin-bottom: 25px;
+}
+
+.description{
+    color: hsl(0, 0%, 53%);
+    font-weight: 500;
+    font-size: 17px;
+    text-align: center;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+.more{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: hsl(0, 0%, 98%);
+    background: hsl(0, 0%, 8%);
+    padding: 15px 18px;
+    font-size: 18px;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 700;
+    border: solid 1px transparent;
+    border-radius: 12px;
+}
+
+.partner-logo{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.partner-logo img{
+    flex-basis: auto;
+    width: 70px;
+    height: 20px;
+}
+
+.partner-logo :not(:first-child){
+    width: 60px;
+    height: 20px;
+}
