@@ -1,3 +1,5 @@
+/* mobile design */
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -31,7 +33,7 @@ body{
     left: auto;
     top: 0;
     padding: 20px 25px 0;
-    height: 200vw;
+    height: 215vw;
     color: hsl(0, 0%, 41%) ;
     box-shadow: -150px 0 100px rgba(0, 0, 0, 0.4);
 }
@@ -120,9 +122,6 @@ body{
     display: none;
 }
 
-.text{
-    margin-bottom: 50px;
-}
 
 .title{
     text-align: center;
@@ -153,6 +152,7 @@ body{
     font-weight: 700;
     border: solid 1px transparent;
     border-radius: 12px;
+    margin-bottom: 50px;
 }
 
 .partner-logo{
@@ -173,4 +173,251 @@ body{
 .partner-logo :not(:first-child){
     width: 60px;
     height: 20px;
+}
+
+/* Responsive design */
+
+@media only screen and (min-width: 650px){
+
+    .nav-group{
+        padding: 20px 50px 0;
+        height: 160vw;
+        box-shadow: -150px 0 600px rgba(0, 0, 0, 0.6);
+    }
+
+    .img-hero{
+        margin-bottom: 60px;
+    }
+
+    .title{
+        font-size: 45px;
+    }
+
+    .text{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .partner-logo img{
+        flex-basis: auto;
+        width: 80px;
+        height: 25px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .header{
+        display: flex;
+    }
+
+    .icon-menu{
+        display: none;
+    }
+
+    .icon-close-menu{
+        display: none;
+    }
+
+    .nav-group{
+        background: transparent;
+        position: static;
+        box-shadow: 0 0 0 ;
+        display:  flex;
+        justify-content: space-between;
+        margin-left: 0;
+        margin-right: auto;
+        height: auto;
+        padding: 10px 20px 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .menu{
+        display: flex;
+        justify-self: flex-start;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .menu ul li{
+        display: inline-block;
+    }
+
+    .menu ul li:not(:last-child){
+        margin-right: 25px;
+    }
+
+    .link-action{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .login{
+        margin-right: 20px;
+    }
+
+    .register{
+        padding: 8px 10px;
+    }
+
+    .arrow-down{
+        margin-left: 5px;
+    }
+    
+    .arrow-up{
+        display: none;
+        margin-left: 5px;
+    }
+
+    .title{
+        font-size: 55px;
+    }
+
+    .text{
+        width: 600px;
+    }
+
+    .more{
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .header{
+        padding: 20px 40px 30px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+
+    .img-hero{
+        width: 50%;
+        align-items: center;
+    }
+
+    .hero-mobile{
+        display: none;
+    }
+
+    .hero-desktop{
+        display: block;
+        width: 100%;
+    }
+
+    .text{
+        width: 45%;
+        padding-top: 150px;
+    }
+
+    .title{
+        text-align: left;
+        margin-bottom: 35px;
+    }
+
+    .description{
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    .more{
+        margin-left: 0;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+
+    .partner-logo{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .header{
+        padding: 20px 40px 40px;
+    }
+
+    .main{
+        max-width: 1000px;
+        margin-bottom: 100px;
+    }
+
+    .img-hero{
+        width: 45%;
+        align-items: center;
+    }
+
+    .text{
+        width: 45%;
+        padding-top: 110px;
+    }
+
+    .title{
+        text-align: left;
+        margin-bottom: 45px;
+        font-size: 68px;
+    }
+
+    .description{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:1300px){
+    .header{
+        padding: 20px 40px 40px;
+    }
+
+    .main{
+        max-width: 1100px;
+        margin-bottom: 100px;
+    }
+
+    .img-hero{
+        width: 40%;
+        align-items: center;
+    }
+
+    .text{
+        width: 45%;
+        padding-top: 90px;
+    }
+
+
+    .title{
+        text-align: left;
+        margin-bottom: 45px;
+        font-size: 75px;
+    }
+}
+
+@media screen and (min-width:1400px){
+
+    .main{
+        max-width: 1200px;
+        margin-bottom: 100px;
+    }
+
+    .img-hero{
+        width: 40%;
+        align-items: center;
+    }
+    .text{
+        width: 45%;
+        padding-top: 120px;
+    }
+
+
+    .title{
+        text-align: left;
+        width: 94%;
+        font-size: 75px;
+    }
 }
