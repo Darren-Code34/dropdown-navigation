@@ -176,6 +176,9 @@ body{
     height: 20px;
 }
 
+.attribution{
+    margin-bottom: 50px;
+}
 /* Responsive design */
 
 @media only screen and (min-width: 650px){
@@ -312,6 +315,10 @@ body{
 
     .more{
         margin-bottom: 70px;
+    }
+
+    .attribution{
+        margin-bottom: 80px;
     }
 }
 
