@@ -167,7 +167,6 @@ body{
 }
 
 .partner-logo img{
-    flex-basis: auto;
     width: 70px;
     height: 20px;
 }
@@ -369,6 +368,16 @@ body{
     .partner-logo{
         justify-content: space-between;
     }
+
+    .partner-logo img{
+        width: 80px;
+        height: 30px;
+    }
+
+    .partner-logo :not(:first-child){
+        width: 80px;
+        height: 30px;
+    }
 }
 
 @media screen and (min-width:1200px){
@@ -399,6 +408,16 @@ body{
 
     .description{
         width: 90%;
+    }
+
+    .partner-logo img{
+        width: 90px;
+        height: 35px;
+    }
+
+    .partner-logo :not(:first-child){
+        width: 90px;
+        height: 35px;
     }
 }
 
@@ -431,11 +450,6 @@ body{
         text-align: left;
         margin-bottom: 45px;
         font-size: 75px;
-    }
-
-    .partner-logo img{
-        width: 90px;
-        height: 35px;
     }
 }
 
