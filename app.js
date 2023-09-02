@@ -27,7 +27,8 @@ const companyArrowDown = document.querySelector(".company-arrow-down");
 const companyArrowUp = document.querySelector(".company-arrow-up")
 
 featuresMenu.addEventListener("click", handleFeaturesMenu);
-companyMenu.addEventListener("click", handleCompanyMenu)
+companyMenu.addEventListener("click", handleCompanyMenu);
+
 
 let toggled = false;
 
@@ -62,6 +63,7 @@ function handleCompanyMenu(){
     }
     
 }
+
 
 
 
